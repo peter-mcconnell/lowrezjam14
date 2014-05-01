@@ -1,8 +1,11 @@
 #lowrezjam
 ==========
 
+My 32x32 pixel game entry for the game jame 'lowrezjam'. At the moment of writing, I can't honestly say I know what the game will be. Meh.
+
 Tooling
 -------
 
-- Cloud9 IDE (https://c9.io/)
-- NjmDoodler (http://t.co/ZeZzhv57JO)
+- Sublime Text 3
+- NPM
+- Gulp

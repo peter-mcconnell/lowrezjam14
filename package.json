@@ -1,0 +1,40 @@
+{
+  "name": "lowrezjam14",
+  "version": "0.0.1",
+  "description": "lowrezjam entry by @DesignThenCode",
+  "main": "dist/build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pemcconnell/lowrezjam14.git"
+  },
+  "keywords": [
+    "lowrezjam",
+    "html",
+    "js"
+  ],
+  "author": "pemcconnell",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/pemcconnell/lowrezjam14/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-rename": "~1.2.0",
+    "gulp-concat": "~2.2.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-notify": "~1.2.5",
+    "gulp-ruby-sass": "~0.4.3",
+    "gulp-uglify": "~0.2.1",
+    "gulp-livereload": "~1.3.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-minify-css": "~0.3.4",
+    "gulp-jshint": "~1.5.5",
+    "gulp-cache": "~0.1.3",
+    "gulp-imagemin": "~0.5.0",
+    "browserify": "~3.44.2",
+    "underscore": "~1.6.0"
+  }
+}
