@@ -1,0 +1,30 @@
+@import "config/base";
+
+html {
+    background-color:$html_bgcolor;
+}
+
+body {
+    font-family:$font;
+    font-size:0.81em;
+    margin:0;
+    padding:30px;
+    color:$color;
+}
+
+a {
+    color: $acolor;
+}
+a:hover {
+    color: $ahovercover;
+}
+
+#container {
+    padding:20px;
+    background-color: $containerbg;
+    border:2px solid #999;
+}
+
+footer {
+    margin:15px 0 0;
+}

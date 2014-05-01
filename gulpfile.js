@@ -5,7 +5,6 @@ gulp.task('styles', function () {
     return gulp.src('src/css/main.scss')
         .pipe(plugins.sass({ style: 'expanded' }))
         .pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('dist/assets/css'))
         .pipe(plugins.rename({suffix: '.min'}))
         .pipe(plugins.minifyCss())
         .pipe(gulp.dest('dist/assets/css'))
@@ -16,12 +15,9 @@ gulp.task('scripts', function () {
     return gulp.src('src/js/main.js')
         .pipe(plugins.jshint('.jshintrc'))
         .pipe(plugins.jshint.reporter('default'))
-        .pipe(plugins.concat('main.js'))
-        .pipe(gulp.dest('dist/assets/js'))
         .pipe(plugins.rename({suffix: '.min'}))
         .pipe(plugins.uglify())
-        .pipe(plugins.concat('build.js'))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('dist/assets/js'))
         .pipe(plugins.notify({ message: 'Scripts task complete' }));
 });
 
@@ -44,9 +40,9 @@ gulp.task('watch', function(){
     gulp.watch('src/images/**/*', ['images']);
 
     var server = plugins.livereload();
-    gulp.watch(['dist/**']).on('change', function (file) {
+    gulp.watch(['dist/**']).on('change', function(file) {
         server.changed(file.path);
-    })
+    });
 
 });
 
